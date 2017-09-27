@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.cms.Register</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ComplaintRegister</servlet-name>
+		<servlet-class>com.cms.ComplaintRegister</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.cms.Login</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AdminComplaints</servlet-name>
+		<servlet-class>com.cms.AdminComplaints</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateAdminComplaint</servlet-name>
+		<servlet-class>com.cms.UpdateAdminComplaint</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>StaffComplaints</servlet-name>
+		<servlet-class>com.cms.StaffComplaints</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GetStaffComplaint</servlet-name>
+		<servlet-class>com.cms.GetStaffComplaint</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ResolveComplaint</servlet-name>
+		<servlet-class>com.cms.ResolveComplaint</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ComplaintRegister</servlet-name>
+		<url-pattern>/complaint_register</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AdminComplaints</servlet-name>
+		<url-pattern>/ac</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UpdateAdminComplaint</servlet-name>
+		<url-pattern>/updateComplaint</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>StaffComplaints</servlet-name>
+		<url-pattern>/staffComplaints</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GetStaffComplaint</servlet-name>
+		<url-pattern>/getStaffComplaint</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ResolveComplaint</servlet-name>
+		<url-pattern>/resolveComplaint</url-pattern>
+	</servlet-mapping>
+</web-app>
